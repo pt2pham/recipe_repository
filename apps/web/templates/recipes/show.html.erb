@@ -1,0 +1,25 @@
+<div id="recipes">
+  <div class="recipe">
+    <h2><%= recipe.name %></h3>
+    <p>Difficulty: <%= recipe.difficulty %>/5.0</p>
+    <p>Food Type: <%= recipe.food_type %></p>
+    <p>Serving Size: <%= recipe.serving_size %> people</p>
+    <p>Cooking and Prep Time: <%= recipe.duration %> minutes</p>
+    <div>
+      <h3>Ingredients</h3>
+      <p><%= recipe.ingredients %></p>
+    </div>
+    
+    <div>
+      <h3>Instructions</h3>
+      <p><%= recipe.instructions %></p>
+    </div>
+
+    <div>
+      <h3>Notes</h3>
+      <p><%= recipe.notes %></p>
+    </div>
+
+    <p>Tags: <%= recipe.tags %></p>
+  </div>
+</div>
