@@ -6,6 +6,8 @@ gem 'hanami-model', '~> 1.3'
 
 gem 'pg'
 
+gem 'bigdecimal', '~> 1.4' # monkey patch since ruby-2.7.0 removes BigDecimal.new
+
 group :development do
   # Code reloading
   # See: https://guides.hanamirb.org/projects/code-reloading
