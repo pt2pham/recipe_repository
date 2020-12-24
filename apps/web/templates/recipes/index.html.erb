@@ -1,0 +1,16 @@
+<h2>All Recipes</h2>
+
+<% if recipes.any? %>
+  <div id="recipes">
+    <% recipes.each do |recipe| %>
+      <div class="recipe">
+        <h2><%= recipe.name %></h2>
+        <p>Difficulty: <%= recipe.difficulty %></p>
+        <p><%= recipe.notes %></p>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <p class="placeholder">There are no recipes yet.</p>
+<% end %>
+<a href="/recipes/new">New recipe</a>

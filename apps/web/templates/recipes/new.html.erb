@@ -1,0 +1,59 @@
+<h2>Add Recipe</h2>
+
+<%=
+  form_for :recipe, '/recipes' do
+    div class: 'input' do
+      label      :name
+      text_field :name
+    end
+
+    div class: 'input' do
+      label      :difficulty
+      text_field :difficulty
+    end
+    
+    div class: 'input' do
+      label      :food_type
+      text_field :food_type
+    end
+
+    div class: 'input' do
+      label      :serving_size
+      text_field :serving_size
+    end
+
+    div class: 'input' do
+      label      :duration
+      text_field :duration
+    end
+
+    div class: 'input' do
+      label      :ingredients
+      text_field :ingredients
+    end
+
+    div class: 'input' do
+      label      :instructions
+      text_field :instructions
+    end
+
+    div class: 'input' do
+      label      :notes
+      text_field :notes
+    end
+
+    div class: 'input' do
+      label      :tags
+      text_field :tags
+    end
+
+    div class: 'input' do
+      label      :image
+      text_field :image
+    end
+
+    div class: 'controls' do
+      submit 'Create Recipe'
+    end
+  end
+%>

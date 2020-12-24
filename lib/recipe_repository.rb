@@ -1,2 +1,2 @@
-module RecipeRepository
+module RecipeRepositoryApp
 end
