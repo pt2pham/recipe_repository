@@ -1,0 +1,3 @@
+project=recipe_repository
+test=rspec
+template=erb
