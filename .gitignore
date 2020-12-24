@@ -1,5 +1,7 @@
 /db/*.sqlite
+/db/*.pg
 /public/assets*
 /tmp
 .env.local
 .env.*.local
+.env.production
