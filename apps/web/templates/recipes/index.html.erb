@@ -4,8 +4,8 @@
   <div id="recipes">
     <% recipes.each do |recipe| %>
       <div class="recipe">
-        <h2><%= recipe.name %></h2>
-        <p>Difficulty: <%= recipe.difficulty %></p>
+        <h3><%= recipe.name %></h3>
+        <p>Difficulty: <%= recipe.difficulty %>/5.0</p>
         <p><%= recipe.notes %></p>
       </div>
     <% end %>
