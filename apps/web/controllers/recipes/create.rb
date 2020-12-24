@@ -17,7 +17,6 @@ module Web
             required(:instructions).filled(:str?)
             required(:notes).filled(:str?)
             required(:tags).filled(:str?)
-            required(:image).filled(:str?)
           end
         end
 
