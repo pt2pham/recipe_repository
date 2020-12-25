@@ -1,11 +1,27 @@
 <!DOCTYPE html>
+<%= stylesheet 'bootstrap' %>
+<%= javascript 'bootstrap' %>
+<%= javascript 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' %>
 <html>
   <head>
-    <title>Web</title>
+    <title>Recipe Repository</title>
     <%= favicon %>
   </head>
   <body>
-    <h1>Recipe Repository</h1>
+    <h1 class="display-1">Recipe Repository</h1>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="nav navbar-nav">
+        <a class="nav-link <%= "active" if current_page?(routes.root_path) %>" href=<%= routes.root_path %>>
+          Home
+        </a>
+        <a class="nav-link <%= "active" if current_page?(routes.recipes_path) %>" href=<%= routes.recipes_path %>>
+          Recipes
+        </a>
+        <a class="nav-link <%= "active" if current_page?(routes.new_recipe_path) %>" href=<%= routes.new_recipe_path %>>
+          Submit
+        </a>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
