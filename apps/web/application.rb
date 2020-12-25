@@ -295,7 +295,7 @@ module Web
         # Use fingerprint file name for asset paths
         #
         # See: https://guides.hanamirb.org/assets/overview
-        fingerprint true
+        # fingerprint true
 
         # Content Delivery Network (CDN)
         #
@@ -308,7 +308,7 @@ module Web
         # Subresource Integrity
         #
         # See: https://guides.hanamirb.org/assets/content-delivery-network/#subresource-integrity
-        subresource_integrity :sha256
+        # subresource_integrity :sha256
       end
     end
   end
