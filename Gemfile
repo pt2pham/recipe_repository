@@ -1,12 +1,18 @@
 source 'https://rubygems.org'
 
-ruby '3.1.0'
+ruby '2.7.6'
 
 gem 'rake'
-gem 'hanami',         '~> 1.3'
-gem 'hanami-model',   '~> 1.3'
-gem 'sprockets',      '~> 4.0'
-gem 'jquery-hanami',  '~> 0.1'
+gem 'hanami',             '~> 1.3.5'
+gem 'hanami-model',       '~> 1.3'
+gem 'sprockets',          '~> 4.0'
+gem 'jquery-hanami',      '~> 0.1'
+
+# updating this to latest fixes problems with validations gem
+gem 'hanami-validations', '~> 1.3.9'
+
+# Rolling this back to 0.8.1 fixes bug with constant
+gem 'dry-core', '0.8.1'
 
 gem 'pg'
 
